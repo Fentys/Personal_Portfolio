@@ -1,0 +1,96 @@
+@media only screen and (max-width: 1250px) {
+  .image, .image img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .nav-button {
+    display: none;
+  }
+  .nav-menu.responsive {
+    left: 0;
+  }
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    min-height: 450px;
+    height: 90vh;
+    transition: .3s;
+  }
+  .nav-menu ul {
+    flex-direction: column;
+  }
+  .nav-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #home {
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  .featured-text {
+    width: 100%;
+    order: 2;
+    justify-content: center;
+    align-content: flex-start;
+    min-height: 60vh;
+  }
+  .social-icons {
+    margin-top: 2em;
+  }
+  .featured-image {
+    order: 1;
+    justify-content: center;
+    min-height: 150px;
+    width: 100%;
+    margin-top: 95px;
+  }
+  .image, .image img {
+    width: 300px;
+    height: 300px;
+  }
+  .image {
+    position: relative;
+    top: 40px;
+  }
+  .row {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .about-info, .contact-info {
+    width: 100%;
+  }
+  .project-container {
+    justify-content: center;
+    gap: 80px;
+  }
+  .project-box {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .featured-name {
+    font-size: 40px;
+  }
+  .project-box {
+    width: 100%;
+  }
+  .form-inputs {
+    flex-direction: column;
+  }
+  .input-field {
+    width: 100%;
+  }
+}
