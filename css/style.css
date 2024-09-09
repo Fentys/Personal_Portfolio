@@ -92,7 +92,7 @@ body {
 }
 
 /* --- NAVIGATION BAR --- */
-nav {
+#header {
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -145,12 +145,12 @@ nav {
   font-size: 28px;
   cursor: pointer;
 }
-.active-link {
+#active-link {
   position: relative;
-  color: var(--second-color);
+  color: var(--color-grey);
   transition: .3;
 }
-.active-link::after {
+#active-link::after {
   content: '';
   position: absolute;
   left: 50%;

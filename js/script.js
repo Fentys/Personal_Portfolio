@@ -18,11 +18,9 @@ function headerShadow() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     navHeader.style.boxShadow = "0 1px 6px rgba(0, 0, 0, 0.1)"
     navHeader.style.height = "90px"
-    navHeader.style.lineHeight = "90px"
   } else {
     navHeader.style.boxShadow = "none"
     navHeader.style.height = "120px"
-    navHeader.style.lineHeight = "120px"
   }
 }
 
@@ -92,10 +90,10 @@ function scrollActive() {
     sectionId = current.getAttribute('id');
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
+      document.querySelector('.nav-menu a[href*=' + sectionId + ']').id = ('active-link')
 
     } else {
-      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
+      document.querySelector('.nav-menu a[href*=' + sectionId + ']').removeAttribute('id')
     }
   })
 }
